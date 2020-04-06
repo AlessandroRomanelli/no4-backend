@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a63e893c-53db-4f8c-b8fc-54a4977a3235" name="Default Changelist" comment="">
+    <list default="true" id="a63e893c-53db-4f8c-b8fc-54a4977a3235" name="Default Changelist" comment="Backend integration">
       <change afterPath="$PROJECT_DIR$/../frontend/src/Application/index.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../frontend/src/Application/index.sass" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../frontend/src/Application/nations.js" afterDir="false" />
@@ -12,6 +12,8 @@
       <change afterPath="$PROJECT_DIR$/../frontend/src/Navbar/Logout/index.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../frontend/src/storage.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../frontend/src/utils/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/App.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/Home/About/index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Home/About/index.sass" afterDir="false" />
@@ -44,6 +46,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Alessandro Romanelli &lt;aleromrod@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../frontend" />
   </component>
   <component name="ProjectId" id="1ZtFU9RvrTuJT4XHf799zKZqhD4" />
@@ -93,14 +100,22 @@
       <workItem from="1585670915507" duration="4295000" />
       <workItem from="1585737602660" duration="35446000" />
       <workItem from="1586100644307" duration="10458000" />
-      <workItem from="1586124581860" duration="12552000" />
+      <workItem from="1586124581860" duration="12778000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Backend integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Backend integration" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="583" y="28" key="CommitChangelistDialog2" timestamp="1586137717319">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="583" y="28" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586137717319" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1585750178394">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
