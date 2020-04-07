@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a63e893c-53db-4f8c-b8fc-54a4977a3235" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lists/models/Slot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lists/models/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/lists/models/Application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lists/models/Group.js" beforeDir="false" afterPath="$PROJECT_DIR$/lists/models/Group.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lists/models/Section.js" beforeDir="false" afterPath="$PROJECT_DIR$/lists/models/Section.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lists/models/Unit.js" beforeDir="false" afterPath="$PROJECT_DIR$/lists/models/Unit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lists/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/lists/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lists/models/Slot.js" beforeDir="false" afterPath="$PROJECT_DIR$/lists/models/Slot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/App.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/Application/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Application/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/Application/index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Application/index.sass" afterDir="false" />
@@ -91,7 +84,7 @@
       <workItem from="1585737602660" duration="35446000" />
       <workItem from="1586100644307" duration="10458000" />
       <workItem from="1586124581860" duration="12809000" />
-      <workItem from="1586164924435" duration="23967000" />
+      <workItem from="1586164924435" duration="24590000" />
     </task>
     <task id="LOCAL-00001" summary="Backend integration">
       <created>1586137733760</created>
