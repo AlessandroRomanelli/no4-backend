@@ -37,17 +37,19 @@ const localAuthStrategy = keystone.createAuthStrategy({
 module.exports = {
   keystone,
   apps: [
+    new StaticApp({
+      path: "/",
+      src: "public",
+      fallback: "index.html"
+    }),
     new GraphQLApp({
       apiPath: "/api",
     }),
     new AdminUIApp({
       apiPath: "/api",
+      adminPath: "/admin",
       enableDefaultRoute: true,
       authStrategy: localAuthStrategy,
-    }),
-    new StaticApp({
-      path: "/",
-      src: "public"
     })
   ],
 };

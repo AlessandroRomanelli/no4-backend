@@ -5,9 +5,13 @@ const GroupList = {
     fields: {
         name: { type: Text, isRequired: true },
         description: { type: Text },
-        members: {
+        section: {
             type: Relationship,
-            ref: "User",
+            ref: "Section.groups"
+        },
+        slots: {
+            type: Relationship,
+            ref: "Slot.group",
             many: true
         }
     },

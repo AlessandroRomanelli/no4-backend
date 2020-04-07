@@ -5,6 +5,7 @@ const UserList = {
     fields: {
         name: { type: Text },
         email: { type: Text, isRequired: true, isUnique: true },
+        steamId: { type: Text },
         role: {
             type: Relationship,
             ref: "Role"
@@ -37,12 +38,16 @@ const UserList = {
             type: Relationship,
             ref: "Award",
             many: true
+        },
+        slot: {
+            type: Relationship,
+            ref: "Slot.user"
         }
     },
     // List-level access controls
     access: {
         read: access.userIsAdminOrOwner,
-        update: access.userIsAdminOrOwner,
+        update: access.userIsAdmin,
         create: true,
         delete: access.userIsAdmin,
         auth: true,

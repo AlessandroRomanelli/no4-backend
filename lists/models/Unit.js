@@ -7,7 +7,7 @@ const UnitList = {
         description: { type: Text },
         sections: {
             type: Relationship,
-            ref: "Section",
+            ref: "Section.unit",
             many: true
         }
     },

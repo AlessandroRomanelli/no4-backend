@@ -7,8 +7,12 @@ const SectionList = {
         description: { type: Text },
         groups: {
             type: Relationship,
-            ref: "Group",
+            ref: "Group.section",
             many: true
+        },
+        unit: {
+            type: Relationship,
+            ref: "Unit.sections"
         }
     },
     // List-level access controls
