@@ -4,7 +4,7 @@ const { File, Text } = require("@keystonejs/fields");
 const { LocalFileAdapter } = require("@keystonejs/file-adapters");
 
 const FileAdapter = new LocalFileAdapter({
-    src: "uploads/avatars"
+    src: "public/uploads/avatars"
 });
 
 const AvatarList = {

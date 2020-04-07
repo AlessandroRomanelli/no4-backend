@@ -4,7 +4,7 @@ const { Text, File } = require("@keystonejs/fields");
 const { LocalFileAdapter } = require("@keystonejs/file-adapters");
 
 const FileAdapter = new LocalFileAdapter({
-    src: "uploads"
+    src: "public/uploads/screenshots"
 });
 
 const ScreenshotList = {

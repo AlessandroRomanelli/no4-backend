@@ -4,7 +4,7 @@ const { File } = require("@keystonejs/fields");
 const { LocalFileAdapter } = require("@keystonejs/file-adapters");
 
 const FileAdapter = new LocalFileAdapter({
-    src: "uploads/icons"
+    src: "public/uploads/icons"
 });
 
 const IconList = {
