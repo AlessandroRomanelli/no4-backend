@@ -1,5 +1,5 @@
 const access = require("../../access");
-const { Text, Relationship } = require("@keystonejs/fields");
+const { Text, Relationship, Integer } = require("@keystonejs/fields");
 
 const GroupList = {
     fields: {
@@ -13,6 +13,9 @@ const GroupList = {
             type: Relationship,
             ref: "Slot.group",
             many: true
+        },
+        order: {
+            type: Integer
         }
     },
     // List-level access controls
