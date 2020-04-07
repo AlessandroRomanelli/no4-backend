@@ -1,5 +1,5 @@
 const access = require("../../access");
-const { Text, Relationship } = require("@keystonejs/fields");
+const { Text, Relationship, Integer } = require("@keystonejs/fields");
 
 const SectionList = {
     fields: {
@@ -13,6 +13,9 @@ const SectionList = {
         unit: {
             type: Relationship,
             ref: "Unit.sections"
+        },
+        order: {
+            type: Integer
         }
     },
     // List-level access controls
