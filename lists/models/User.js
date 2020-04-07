@@ -6,10 +6,6 @@ const UserList = {
         name: { type: Text },
         email: { type: Text, isRequired: true, isUnique: true },
         steamId: { type: Text },
-        role: {
-            type: Relationship,
-            ref: "Role"
-        },
         rank: {
             type: Relationship,
             ref: "Rank"
