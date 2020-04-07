@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a63e893c-53db-4f8c-b8fc-54a4977a3235" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/App.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/Application/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Application/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/Application/index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Application/index.sass" afterDir="false" />
@@ -33,7 +34,7 @@
         <option value="Alessandro Romanelli &lt;aleromrod@gmail.com&gt;" />
       </list>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../frontend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZtFU9RvrTuJT4XHf799zKZqhD4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -84,7 +85,7 @@
       <workItem from="1585737602660" duration="35446000" />
       <workItem from="1586100644307" duration="10458000" />
       <workItem from="1586124581860" duration="12809000" />
-      <workItem from="1586164924435" duration="24927000" />
+      <workItem from="1586164924435" duration="25278000" />
     </task>
     <task id="LOCAL-00001" summary="Backend integration">
       <created>1586137733760</created>
