@@ -1,10 +1,11 @@
 const access = require("../../access");
-const { Text } = require("@keystonejs/fields");
+const { Text, Integer } = require("@keystonejs/fields");
 
 const RankList = {
     fields: {
         name: { type: Text },
-        abbreviation: { type: Text }
+        abbreviation: { type: Text },
+        priority: { type: Integer }
     },
     // List-level access controls
     access: {
