@@ -22,8 +22,6 @@ const ApplicationList = {
         steam: { type: Text, isRequired: true, isUnique: true },
         dob: { type: DateTime, isRequired: true },
         country: { type: Text },
-        preferred_role: { type: Relationship, ref: "Role" },
-        interest: { type: Text, isRequired: true },
         hours_exp: { type: Integer },
         referred_from: { type: Text},
         accept_attendance: { type: Checkbox, isRequired: true },
