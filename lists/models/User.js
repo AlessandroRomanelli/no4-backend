@@ -1,5 +1,5 @@
 const access = require("../../access");
-const { Password, Text, Relationship, Select, Checkbox } = require("@keystonejs/fields");
+const { Password, Text, Relationship, Select } = require("@keystonejs/fields");
 
 const UserList = {
     fields: {
@@ -9,6 +9,10 @@ const UserList = {
         rank: {
             type: Relationship,
             ref: "Rank"
+        },
+        avatar: {
+            type: Relationship,
+            ref: "Avatar"
         },
         state: {
             type: Select,
