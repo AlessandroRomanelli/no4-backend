@@ -22,6 +22,7 @@ const ApplicationList = {
         steam: { type: Text, isRequired: true, isUnique: true },
         dob: { type: DateTime, isRequired: true },
         country: { type: Text },
+        interest: { type: Text },
         hours_exp: { type: Integer },
         referred_from: { type: Text},
         accept_attendance: { type: Checkbox, isRequired: true },
