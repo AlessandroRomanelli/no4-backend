@@ -4,7 +4,7 @@ const { PasswordAuthStrategy } = require('@keystonejs/auth-password');
 const { GraphQLApp } = require('@keystonejs/app-graphql');
 const { AdminUIApp } = require('@keystonejs/app-admin-ui');
 const { StaticApp } = require('@keystonejs/app-static');
-const access = require("./access")
+const access = require("./access");
 
 const initialiseData = require('./initial-data');
 
