@@ -16,6 +16,7 @@ const SlotList = (keystone) => ({
         role: { type: Relationship, ref: "Role", required: true },
         user: { type: Relationship, ref: "User.slot" },
         isOpen: { type: Checkbox, defaultValue: true },
+        isReserve: { type: Checkbox, defaultValue: false },
         group: { type: Relationship, ref: "Group.slots"},
         order: { type: Integer }
     },
@@ -28,7 +29,7 @@ const SlotList = (keystone) => ({
         });
         const groupName = data.Group ? data.Group.name : "Unassigned";
         const roleName = data.Role ? data.Role.name : "No Role";
-        return `${groupName}/${roleName}`;
+        return `${groupName}/${roleName}${slot.isReserve ? " (Reserve)" : ""}`;
     },
     // List-level access controls
     access: {

@@ -21,11 +21,6 @@ const GroupList = (keystone) => ({
             ref: "Slot.group",
             many: true
         },
-        reserves: {
-            type: Relationship,
-            ref: "Slot",
-            many: true
-        },
         order: {
             type: Integer
         }
