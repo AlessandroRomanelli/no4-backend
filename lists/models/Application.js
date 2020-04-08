@@ -15,7 +15,7 @@ const userIsAdminOrOwner = ({ authentication: { item: user } }) => {
     }
 };
 
-const ApplicationList = {
+const ApplicationList = (keystone) => ({
     fields: {
         user: {type: Relationship, ref: "User", isRequired: true, isUnique: true },
         name: { type: Text, isRequired: true, isUnique: true },
@@ -44,11 +44,11 @@ const ApplicationList = {
                 return;
             }
             const mutation = `
-            mutation($userId: ID!, $name: String, $steam: String) {
-              updateUser(id: $userId, data: { name: $name, state: member, steamId: $steam }) {
-                id
-              }
-            }`;
+        mutation($userId: ID!, $name: String, $steam: String) {
+          updateUser(id: $userId, data: { name: $name, state: member, steamId: $steam }) {
+            id
+          }
+        }`;
             const variables = {
                 userId: updatedItem.user.toString(),
                 name: updatedItem.name,
@@ -65,7 +65,7 @@ const ApplicationList = {
         create: access.userIsAny,
         delete: access.userIsAdminOrOwner,
     }
-};
+});
 
 module.exports = ApplicationList;
 

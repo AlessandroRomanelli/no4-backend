@@ -1,7 +1,14 @@
 const access = require("../../access");
 const { Text, Relationship, Integer } = require("@keystonejs/fields");
 
-const GroupList = {
+const querySection = `
+query($sectionId: ID!) {
+    Section(where: { id: $sectionId }) {
+        name
+    }
+}`;
+
+const GroupList = (keystone) => ({
     fields: {
         name: { type: Text, isRequired: true },
         description: { type: Text },
@@ -14,18 +21,31 @@ const GroupList = {
             ref: "Slot.group",
             many: true
         },
+        reserves: {
+            type: Relationship,
+            ref: "Slot",
+            many: true
+        },
         order: {
             type: Integer
         }
     },
+    labelResolver: async (group) => {
+        const { data } = await keystone.executeQuery(querySection, {
+            variables: {
+                sectionId: group.section.toString()
+            }
+        });
+        return `${data.Section.name}/${group.name}`
+    },
     // List-level access controls
     access: {
-        read: access.userIsAny,
+        read: true,
         update: access.userIsAdmin,
         create: access.userIsAdmin,
         delete: access.userIsAdmin,
-    },
-};
+    }
+});
 
 module.exports = GroupList;
 

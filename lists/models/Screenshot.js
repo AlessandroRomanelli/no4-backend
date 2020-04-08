@@ -7,20 +7,20 @@ const FileAdapter = new LocalFileAdapter({
     src: "public/uploads/screenshots"
 });
 
-const ScreenshotList = {
-    fields: {
-        title: { type: Text, isRequired: true },
-        description: { type: Text },
-        file: { type: File, adapter: FileAdapter, isRequired: true }
-    },
-    // List-level access controls
-    access: {
-        read: access.userIsAny,
-        update: access.userIsAdmin,
-        create: access.userIsAdmin,
-        delete: access.userIsAdmin,
-    },
-};
+const ScreenshotList = (keystone) => ({
+        fields: {
+            title: { type: Text, isRequired: true },
+            description: { type: Text },
+            file: { type: File, adapter: FileAdapter, isRequired: true }
+        },
+        // List-level access controls
+        access: {
+            read: access.userIsAny,
+            update: access.userIsAdmin,
+            create: access.userIsAdmin,
+            delete: access.userIsAdmin,
+        }
+});
 
 module.exports = ScreenshotList;
 

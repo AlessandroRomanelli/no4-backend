@@ -4,5 +4,8 @@ const modelNames = fs.readdirSync("./lists/models").map(x => x.split(".js").shif
 console.log(modelNames);
 
 module.exports = function(keystone) {
-    modelNames.forEach(name => keystone.createList(name, require("./models/"+name)));
+    modelNames.forEach(name => {
+        const List = require("./models/"+name)(keystone);
+        keystone.createList(name, List);
+    });
 };

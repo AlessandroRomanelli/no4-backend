@@ -1,7 +1,7 @@
 const access = require("../../access");
 const { Text, DateTime, Relationship } = require("@keystonejs/fields");
 
-const EventList = {
+const EventList = (keystone) => ({
     fields: {
         name: { type: Text, isRequired: true },
         description: { type: Text },
@@ -21,8 +21,8 @@ const EventList = {
         update: access.userIsAdmin,
         create: access.userIsAdmin,
         delete: access.userIsAdmin,
-    },
-};
+    }
+});
 
 module.exports = EventList;
 

@@ -7,7 +7,7 @@ const FileAdapter = new LocalFileAdapter({
     src: "public/uploads/icons"
 });
 
-const IconList = {
+const IconList = (keystone) => ({
     fields: {
         file: { type: File, adapter: FileAdapter, isRequired: true }
     },
@@ -17,8 +17,8 @@ const IconList = {
         update: access.userIsAdmin,
         create: access.userIsAdmin,
         delete: access.userIsAdmin,
-    },
-};
+    }
+});
 
 module.exports = IconList;
 

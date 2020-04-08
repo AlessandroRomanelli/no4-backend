@@ -1,7 +1,7 @@
 const access = require("../../access");
 const { Text, Relationship } = require("@keystonejs/fields");
 
-const AwardList = {
+const AwardList = (keystone) => ({
     fields: {
         name: { type: Text },
         icon: { type: Relationship, ref: "Icon" }
@@ -12,8 +12,8 @@ const AwardList = {
         update: access.userIsAdmin,
         create: access.userIsAdmin,
         delete: access.userIsAdmin,
-    },
-};
+    }
+});
 
 module.exports = AwardList;
 

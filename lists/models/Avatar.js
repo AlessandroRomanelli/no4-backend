@@ -7,7 +7,7 @@ const FileAdapter = new LocalFileAdapter({
     src: "public/uploads/avatars"
 });
 
-const AvatarList = {
+const AvatarList = (keystone) => ({
     fields: {
         description: { type: Text },
         file: { type: File, adapter: FileAdapter, isRequired: true }
@@ -18,8 +18,8 @@ const AvatarList = {
         update: access.userIsAdmin,
         create: access.userIsAdmin,
         delete: access.userIsAdmin,
-    },
-};
+    }
+});
 
 module.exports = AvatarList;
 
