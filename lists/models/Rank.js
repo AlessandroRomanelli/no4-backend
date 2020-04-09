@@ -1,11 +1,18 @@
 const access = require("../../access");
-const { Text, Integer } = require("@keystonejs/fields");
+const { Text, Integer, File } = require("@keystonejs/fields");
+
+const { LocalFileAdapter } = require("@keystonejs/file-adapters");
+
+const FileAdapter = new LocalFileAdapter({
+    src: "public/uploads/icons/ranks"
+});
 
 const RankList = (keystone) => ({
         fields: {
             name: { type: Text },
             abbreviation: { type: Text },
-            priority: { type: Integer }
+            priority: { type: Integer },
+            icon: { type: File, adapter: FileAdapter }
         },
         // List-level access controls
         access: {
