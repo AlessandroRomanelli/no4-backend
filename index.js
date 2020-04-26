@@ -46,10 +46,6 @@ module.exports = {
       authStrategy: localAuthStrategy,
     }),
     new StaticApp({
-      path: "/uploads",
-      src: "public/uploads",
-    }),
-    new StaticApp({
       path: "/",
       src: "public",
       fallback: "index.html"

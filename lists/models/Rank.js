@@ -4,7 +4,8 @@ const { Text, Integer, File } = require("@keystonejs/fields");
 const { LocalFileAdapter } = require("@keystonejs/file-adapters");
 
 const FileAdapter = new LocalFileAdapter({
-    src: "public/uploads/icons/ranks"
+    src: "public/uploads/icons/ranks",
+    path: "/ranks"
 });
 
 const RankList = (keystone) => ({
